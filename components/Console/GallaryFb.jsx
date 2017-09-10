@@ -89,7 +89,7 @@ class GallaryFb extends React.PureComponent {
 
                     <div id="myModal" className="modal">
                         <div className="modal-content">
-                        <span className="close cursor" onClick={this.closeModal.bind(this)}>&times;</span>
+                        <span className="close cursor" onClick={this.closeModal.bind(this)}><i className="fa fa-times" ariaHidden="true"></i></span>
                             <div className="mySlides" style={{width:"100%", height:"inherit"}}>
                                 <img ref={(img) => {this.imgElm = img}} src="" style={{width:"100%", height:"inherit"}} />
                             </div>
