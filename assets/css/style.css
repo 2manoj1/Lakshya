@@ -109,7 +109,7 @@ p>span {
 	position: fixed;
 	top: 50%;
 	list-style-type: none;
-	z-index: 2;
+	z-index: 999;
 }
 
 #social-sidebar li:first-child a { border-top-right-radius: 5px; }
