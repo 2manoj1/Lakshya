@@ -4,7 +4,7 @@ import _ from "underscore";
 class ImageSlider extends Component {
     static defaultProps = {
         imgObj : [{
-            imgSrc: 'l9.jpg',
+            imgSrc: 'l1.jpg',
             imgMsgHearder: '<span class="bg-white">"Our<em> MISSION</em> is to<em> HELP</em></span>',
             imgMsgDesc: '<strong class="bg-white">those who<em> NEED</em> It"</strong>'
         },
@@ -51,7 +51,7 @@ class ImageSlider extends Component {
         return _.map(self.props.imgObj, (imgItem, key) => {
             return (
                 <div key={key} className={key == 0 ? "item active pickgradient" : "item pickgradient"}>
-                    <img className="carousel-img" src={"/assets/img/" + imgItem.imgSrc} style={{ width: "100%", height: "auto", overflow: "hidden" }} />
+                    <img className="carousel-img" src={"/assets/img/" + imgItem.imgSrc} style={{ width: "100%", height: "auto", maxHeight: "470px", overflow: "hidden"}} />
                     <div className="container">
                     <div className="carousel-caption">
                         <h1 dangerouslySetInnerHTML={{__html: imgItem.imgMsgHearder}}></h1>
