@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF‐8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lakshya-"Changing Lives"</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" >
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAa9IkFfCkdn4pmRxr9vZL2exiLmLEY_I0"></script>
+
+	<link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico" />
+	<!-- Optional theme -->
+	<link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css %>" media="all">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="100">
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	</script>
+	<div id="app"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		<!-- Jarallax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.7.3/jarallax.min.js'></script>
+
+<!-- Include it if you want to use Video parallax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.7.3/jarallax-video.min.js'></script>
+	<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>
